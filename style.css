@@ -1,0 +1,98 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+}
+body {
+    background-color:#000;
+}
+.wrapper {
+    width:40%;
+    margin:30px auto;
+}
+@media(max-width:769px) {
+    .wrapper {
+        width:70%;
+    }
+}
+.card {
+    padding:10px;
+     
+    background: rgb(88,153,227);
+background: linear-gradient(90deg, rgba(88,153,227,1) 40%, rgba(157,62,234,1) 100%, rgba(10,195,240,1) 100%, rgba(2,0,36,1) 100%);
+    border-radius:10px;
+    box-shadow:1px 1px 5px rgba(0,0,0,0.3);
+    color:#fff;
+}
+.card .search-box {
+    width:100%;
+    display:flex;
+    align-items:center;
+    margin:10px 0;
+    gap:10px;
+}
+.card .search-box input {
+    width:calc(100% - 46px);
+    padding:10px ;
+    border-radius:20px;
+    border:2px solid #ddd;
+    background-color:  #fff;
+    
+}
+.card .search-box input:focus {
+    outline:none;
+    border-color: #A3D4F7;
+}
+ 
+.card .search-box button   {
+ cursor:pointer;
+ border:none;
+  display:flex;
+  align-items:center;
+  border-radius:50%;
+  overflow:hidden;
+width:35px;
+height:35px;
+justify-content:center;
+}
+.card .search-box button img {
+    width:20px;
+    height:20px;
+}
+.card .weather-status {
+    text-align:center;
+}
+.weather-status.hidden {
+    display:none;
+}
+.card .weather-status img{
+width:150px;
+height:150px;
+ 
+}
+.card .details {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:20px;
+    padding: 0 20px;
+}
+.card .details .col {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-size:15px;
+    font-weight:bold;
+}
+.card .details img {
+    width:40px;
+    height:40px;
+}
+.error {
+    text-align:center;
+    font-size:25px;
+    color:#f00;
+    display:none;
+}
